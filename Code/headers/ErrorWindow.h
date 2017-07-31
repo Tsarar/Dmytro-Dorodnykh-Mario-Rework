@@ -4,7 +4,7 @@
 
 class ErrorWindow {
 	sf::Texture *errorTexture;	//textures
-	sf::Sprite *error;			//
+	sf::Sprite *error;		//
 
 public:
 	ErrorWindow(int num);	//number of error
