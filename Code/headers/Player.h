@@ -49,43 +49,43 @@ public:
 		void heal(int healing);	//or heals
 		void heartsChange() { hearts->setTextureRect( sf::IntRect(0,20*(3-*lives),63,19) ); };	//changing texture
 
-		float getDx() const { return *dx; }											//getters
-		bool getOnGround() const { return *isOnGround; }							//
-		float getDy() const { return *dy; }											//
-		inline sf::Sprite getSprite() const { return *sprite; }						//
-		sf::FloatRect getRect() const { return *rect; }								//
-		int	getLives() const { return *lives;}										//
-		sf::Sprite getHearts() const { return *hearts;}								//
-		bool alive() const { if (*lives>0) return true; else return false;}			//
-		int getCoins() const { return *coins; }										//
-		bool playerIsWon() const { return *isWon; }									//
-		int getCurrentLevel() const { return *currentLevel; }						//
-		void setDx(double _dx) { *dx=float(_dx); }									//setters
-		void setDy(double _dy) { *dy=float(_dy); }									//
-		void setOnGround()  { *isOnGround=true; }									//
-		void setOnGround(bool _isOnGround)  { *isOnGround=_isOnGround; }			//
-		void setColorSprite(sf::Color _color) { sprite->setColor(_color); }			//
-		void setBlinking(bool _isBlinking) { *isBlinking = _isBlinking; }			//
-		void setLives(int _lives)	{ *lives = _lives; }							//
-		void setTeleported() { *isTeleported = true; }								//
+		float getDx() const { return *dx; }						//getters
+		bool getOnGround() const { return *isOnGround; }				//
+		float getDy() const { return *dy; }						//
+		inline sf::Sprite getSprite() const { return *sprite; }				//
+		sf::FloatRect getRect() const { return *rect; }					//
+		int	getLives() const { return *lives;}					//
+		sf::Sprite getHearts() const { return *hearts;}					//
+		bool alive() const { if (*lives>0) return true; else return false;}		//
+		int getCoins() const { return *coins; }						//
+		bool playerIsWon() const { return *isWon; }					//
+		int getCurrentLevel() const { return *currentLevel; }				//
+		void setDx(double _dx) { *dx=float(_dx); }					//setters
+		void setDy(double _dy) { *dy=float(_dy); }					//
+		void setOnGround()  { *isOnGround=true; }					//
+		void setOnGround(bool _isOnGround)  { *isOnGround=_isOnGround; }		//
+		void setColorSprite(sf::Color _color) { sprite->setColor(_color); }		//
+		void setBlinking(bool _isBlinking) { *isBlinking = _isBlinking; }		//
+		void setLives(int _lives)	{ *lives = _lives; }				//
+		void setTeleported() { *isTeleported = true; }					//
 		void setTeleported(bool _isTeleported) { *isTeleported = _isTeleported; }	//
-		void addCoin() { *coins = *coins + 1; }										//
-		void setCoins(int _coins) { *coins=_coins; }								//
-		void setIsWon() { *isWon=true; }											//
-		void setIsWon(bool _isWon) { *isWon=_isWon; }								//	
-		void setCurrentLevel(int _currLevel) { *currentLevel=_currLevel; }			//
+		void addCoin() { *coins = *coins + 1; }						//
+		void setCoins(int _coins) { *coins=_coins; }					//
+		void setIsWon() { *isWon=true; }						//
+		void setIsWon(bool _isWon) { *isWon=_isWon; }					//	
+		void setCurrentLevel(int _currLevel) { *currentLevel=_currLevel; }		//
 		void setWinCondition(int _winCondition) { *winCondition=_winCondition; }	//
 
 		void setSprite(sf::Texture &_image) {
-			sprite->setTexture(_image);				//our texture
+			sprite->setTexture(_image);		//our texture
 			*rect = sf::FloatRect(5*16,5*16,16,16);	//rectangle 16x16 plus random position
 		};
 
-		inline void spriteUpdate();											//sprite change
+		inline void spriteUpdate();						//sprite change
 		inline void collisionCheckSolid(int iCoord,int jCoord, int mode);	//collision with solid blocks
 		void collisionCheckSolidBonus(int iCoord,int jCoord, int mode);		//with bonus block
 		void collisionCheckPlatform(int iCoord,int jCoord, int mode);		//with platform
-		void collisionLadder(int iCoord,int jCoord, int mode);				//with ladder
+		void collisionLadder(int iCoord,int jCoord, int mode);			//with ladder
 
 		void setDeathSprite() { sprite->setTextureRect(sf::IntRect(184,144,16,16)); }	//for death
 		void updateAxisY(float time);													//update only y axis, light update function
