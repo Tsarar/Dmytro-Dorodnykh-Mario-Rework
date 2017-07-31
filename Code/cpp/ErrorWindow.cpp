@@ -10,8 +10,8 @@
 		case 3: errorTexture->loadFromFile("images/SaveTroubles.png"); break;	//can't open save file
 		default: errorTexture->loadFromFile("images/Error.png"); break;		//unknown error
 			}
-		error->setTexture(*errorTexture);		//
-	};							//
+		error->setTexture(*errorTexture);		
+	};							
 	
 	ErrorWindow::~ErrorWindow() {
 		delete errorTexture;	//freeing memory
