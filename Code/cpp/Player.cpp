@@ -161,8 +161,8 @@
 							case 'j': collisionCheckSolid(i,j,num); break;	//column with platform
 							case 'i': collisionCheckSolid(i,j,num); break;	//solid column
 							case 'L': collisionLadder(i,j,num);	break;	//ladder
-							case 'p': collisionCheckPlatform(i,j,num); break;	//platform
-							case 'c': collisionCheckSolidBonus(i,j,num); break;	//bonus
+							case 'p': collisionCheckPlatform(i,j,num);   break; //platform
+							case 'c': collisionCheckSolidBonus(i,j,num); break; //bonus
 							case 'C': *coins=*coins+1; coinSound->play(); map.setTileMap(i,j,' '); if (*coins>=*winCondition) *isWon=true; break; 	//coin
 							case 'H': teleport(152,12); teleportSound->play(); break;								//tp block
 							case 'W': hurt();													//Player takes damage
