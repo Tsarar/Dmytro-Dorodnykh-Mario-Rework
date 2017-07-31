@@ -1,0 +1,18 @@
+2 3 0 19 1 48.0282 208 166 7 31 2017 13 29 118.568
+   00000000000000000000000000000000000000000kkkkkkkkk00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+   0                                        k       k                                                                                                                T
+   0                 kkkkkkkkk              k       k        ttttttttttttttttt                                                                                       T
+   0                 k       k              kC      k       tt                                                               TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT    T
+   0                 k                      kkkk  kkk       tt              tt                      C                        TL                               LTTTTT T
+   0                 kC                     k       k       tt   ttttctttttttt                                               TLTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTLT     T
+   0                 kkkkkkkkk              k       k       ttt             tt                                              TTLTTL                         LTTLT  TTTT
+   0                 k       kk             k               ttt      C      tt            C        CcC      C                TLTTLTTTTTTTTTTTTTTTTTTTTTTTTTLTTLTT    T
+   0                 k       k k            kkkckkkkkk      tttttttttttttt  tt                                               TLTTL                        TLTTLCTTTT T
+   0                 k      Ck  k           k       k       tt              tt       ffffffffffffffffffffffffffffff         TTLTTL            C           TLTTLTT    T
+   0                 kkk  kkkk   kk                 k                       tt      kppppppppppjpppppppppjpppppppppk         TLTTTTTTTTTTTTTTTTTTTTTTTTTTTTLTTLT  TTTT
+   0                 b     b                        kk                     ttt     kk          i         i         kk        TL       b        b      b    LTTLT TTTTT
+   0                 b     b        k       kkkkkk  k       tt              tt    kkk          i         i         kkk      TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTLT     T
+   0                 b     b       kkk     kiC      k       tt              tt   kkkk  C       i         i      C  kkkk       b       b        b      b       LTTTTT T
+   ggggggggggg   ggggPgggggPgggggggPPPgggggPPPPPPPP Pggg  ggttttttttttttttttttgggPPPPggggggggggPWWWWWWWWWPgggggggggPPPPgggTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTC    T
+   PPPPPPPPPPPWWWPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP   C   PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPwwwwwwwwwPPPPPPPPPPPPPPPPPTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+   PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP
