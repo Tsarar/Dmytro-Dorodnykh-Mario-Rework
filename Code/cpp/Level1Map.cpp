@@ -134,7 +134,7 @@
 						case 'U':	tile.setTextureRect( sf::IntRect(0,16,16,16) );			break;	//unicorn
 						case 'u':	tile.setTextureRect( sf::IntRect(16,16,-16,16) );		break;	//reverse unicorn
 						case 'W':	tile.setTextureRect( sf::IntRect(240,176,16,16) );		break;	//water
-						case 'C':   tile.setTextureRect( sf::IntRect(240,208,16,16) );		break;		//coin
+						case 'C':	tile.setTextureRect( sf::IntRect(240,208,16,16) );		break;	//coin
 						case ' ':	continue;								//air
 						case '0':	continue;								//invisible wall
 					}
