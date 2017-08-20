@@ -6,15 +6,15 @@
 
 class Level1Map : public LevelMap {
 
-	Entity *mushroom;				//our level 1 enemy
+	Entity *mushroom;		//our level 1 enemy
 	
 	sf::SoundBuffer *smashBuffer;	//smash sound
-	sf::Sound *smashSound;			//
+	sf::Sound *smashSound;		//
 	sf::SoundBuffer *pipeBuffer;	//pipe sound
-	sf::Sound *pipeSound;			//
-	StartMenu *Menu;				//starting menu
-	sf::Clock *clockForDown;		//clock for going deeper
-	bool goDeep;					//bool for going deeper
+	sf::Sound *pipeSound;		//
+	StartMenu *Menu;		//starting menu
+	sf::Clock *clockForDown;	//clock for going deeper
+	bool goDeep;			//bool for going deeper
 public:
 	Level1Map(sf::RenderWindow &window, bool showMenu);
 
