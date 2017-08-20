@@ -1,14 +1,14 @@
 #pragma once
 
-#include "LevelMap.h"			//our level
-#include "Slime.h"				//our slimes
+#include "LevelMap.h"		//base level
+#include "Slime.h"		//slimes
 
 class Level2Map : public LevelMap {
 	
-	Entity *slime1,*slime2,*slime3;	//our level 2 enemies
+	Entity *slime1,*slime2,*slime3;	//level 2 enemies
 	
 	sf::SoundBuffer *smashBuffer;	//smash sound (it plays when we kill enemy)
-	sf::Sound *smashSound;			//
+	sf::Sound *smashSound;		//
 public:
 	Level2Map(sf::RenderWindow &window);
 	
