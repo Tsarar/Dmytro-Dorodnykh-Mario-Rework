@@ -8,8 +8,8 @@ protected:
 	sf::FloatRect rect;		//void zone
 	sf::Sprite sprite;		//image
 	float currentFrame;		//frame
-	class LevelMap &map;	//our level map
-	bool life;				//is creature alive?
+	class LevelMap &map;		//our level map
+	bool life;			//is creature alive?
 public:
 
 	Entity(LevelMap &_map);
@@ -23,8 +23,8 @@ public:
 	virtual void collision(int num) = 0;	//blocks interaction, num in case of two-dimensional entity
 
 	bool getLife() const { return life; }					//getters
-	sf::FloatRect getRect()	const { return rect; }			//
-	inline sf::Sprite getSprite() const { return sprite; }	//
+	sf::FloatRect getRect()	const { return rect; }				//
+	inline sf::Sprite getSprite() const { return sprite; }			//
 	void setLife(bool _life) { life=_life; }				//setters
 	void setDx(double _dx)	 { dx=float(_dx); }				//
 
