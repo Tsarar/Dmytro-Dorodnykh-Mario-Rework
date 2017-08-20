@@ -1,26 +1,26 @@
 #include "../headers/StartMenu.h"
 
-	StartMenu::StartMenu(sf::RenderWindow &_window) : window(_window) {	//using heap
+	StartMenu::StartMenu(sf::RenderWindow &_window) : window(_window) {
 
-				menuTexture1.loadFromFile("images/NewGame.png");		//buttons
+				menuTexture1.loadFromFile("images/NewGame.png");	//buttons
 				menuTexture2.loadFromFile("images/AboutButton.png");	//
 				menuTexture3.loadFromFile("images/ControlsButton.png");	//
-				menuTexture4.loadFromFile("images/Exit.png");			//
-				aboutTexture.loadFromFile("images/About.png");			//
+				menuTexture4.loadFromFile("images/Exit.png");		//
+				aboutTexture.loadFromFile("images/About.png");		//
 				controlsTexture.loadFromFile("images/Controls.png");	//
-				menu1.setTexture(menuTexture1);							//rectangles
-				menu2.setTexture(menuTexture2);							//
-				menu3.setTexture(menuTexture3);							//
-				menu4.setTexture(menuTexture4);							//
-				about.setTexture(aboutTexture);							//
-				controls.setTexture(controlsTexture);					//
+				menu1.setTexture(menuTexture1);				//rectangles
+				menu2.setTexture(menuTexture2);				//
+				menu3.setTexture(menuTexture3);				//
+				menu4.setTexture(menuTexture4);				//
+				about.setTexture(aboutTexture);				//
+				controls.setTexture(controlsTexture);			//
 
-				stand=0;												//menu starts as zero
-				menuNum=0;												//
-				menu1.setPosition(100,30);								//standart positions
-				menu2.setPosition(100,80);								//
-				menu3.setPosition(100,130);								//
-				menu4.setPosition(100,180);								//
+				stand=0;						//menu starts as zero
+				menuNum=0;						//
+				menu1.setPosition(100,30);				//standart positions
+				menu2.setPosition(100,80);				//
+				menu3.setPosition(100,130);				//
+				menu4.setPosition(100,180);				//
 			};
 
 	StartMenu::~StartMenu() {};
@@ -45,7 +45,7 @@
 
 					sizeVector = window.getSize();																																	//if somebody	
 					if (sf::IntRect(sizeVector.x/4,int(sizeVector.y/8.3333),int(sizeVector.x/2.2),sizeVector.y/6).contains(sf::Mouse::getPosition(window))) {stand=0; menuNum=1;}	//will decide	//default:100,30,181,42
-					if (sf::IntRect(sizeVector.x/4,int(sizeVector.y/3.1250),int(sizeVector.x/2.2),sizeVector.y/6).contains(sf::Mouse::getPosition(window))) {stand=0; menuNum=2;}	//to strech		//default:100,80,181,42
+					if (sf::IntRect(sizeVector.x/4,int(sizeVector.y/3.1250),int(sizeVector.x/2.2),sizeVector.y/6).contains(sf::Mouse::getPosition(window))) {stand=0; menuNum=2;}	//to strech	//default:100,80,181,42
 					if (sf::IntRect(sizeVector.x/4,int(sizeVector.y/1.9231),int(sizeVector.x/2.2),sizeVector.y/6).contains(sf::Mouse::getPosition(window))) {stand=0; menuNum=3;}	//the window	//default:100,130,181,42
 					if (sf::IntRect(sizeVector.x/4,int(sizeVector.y/1.3888),int(sizeVector.x/2.2),sizeVector.y/6).contains(sf::Mouse::getPosition(window))) {stand=0; menuNum=4;}	//the window	//default:100,180,181,42
 					
@@ -53,22 +53,22 @@
 						sf::Keyboard::isKeyPressed(sf::Keyboard::Return)) {
 						//onClick or ENTER event
 						if (menuNum<2) { window.setTitle("Mario!"); break; }	//start the game
-						else if (menuNum==2) drawAbout();						//about
-						else if (menuNum==3) drawControls();					//controls
-						else if (menuNum==4) window.close();					//exit
+						else if (menuNum==2) drawAbout();			//about
+						else if (menuNum==3) drawControls();			//controls
+						else if (menuNum==4) window.close();			//exit
 					 }
 
-					if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) {	//arrows
+					if (sf::Keyboard::isKeyPressed(sf::Keyboard::Down)) {		//arrows
 						if (cooldownClock.getElapsedTime().asSeconds() > 0.15){	//delay
-							++stand;					//active button goes down
+							++stand;			//active button goes down
 							if (stand>4) stand=1;		//cycling
 							cooldownClock.restart();	//
 						};
 					}
 
-					if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {	//arrows
+					if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)) {		//arrows
 						if (cooldownClock.getElapsedTime().asSeconds() > 0.15){	//delay
-							--stand;							//active button goes up
+							--stand;				//active button goes up
 							if (stand<1) stand=4;			//cycling
 							cooldownClock.restart();		//
 						};
@@ -78,7 +78,7 @@
 					window.draw(menu2);			//
 					window.draw(menu3);			//
 					window.draw(menu4);			//
-												//
+										//
 					window.display();			//
 				}
 			};
@@ -86,8 +86,8 @@
 	void StartMenu::drawAbout() {
 		window.setTitle("About");
 		while (!sf::Keyboard::isKeyPressed(sf::Keyboard::Escape) && window.isOpen()) {
-			window.clear(sf::Color(100,100,100));									//clearing current frame
-			window.draw(about);														//draw menu
+			window.clear(sf::Color(100,100,100));							//clearing current frame
+			window.draw(about);									//draw menu
 			static sf::Event event;
 			while (window.pollEvent(event))
 					{
@@ -101,8 +101,8 @@
 	void StartMenu::drawControls() {
 		window.setTitle("Controls");
 		while (!sf::Keyboard::isKeyPressed(sf::Keyboard::Escape) && window.isOpen())  {
-			window.clear(sf::Color(100,100,100));									//clearing current frame
-			window.draw(controls);													//draw menu
+			window.clear(sf::Color(100,100,100));							//clearing current frame
+			window.draw(controls);									//draw menu
 			static sf::Event event;
 			while (window.pollEvent(event))
 					{
