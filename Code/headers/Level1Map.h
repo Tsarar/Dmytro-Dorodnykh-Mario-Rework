@@ -1,12 +1,12 @@
 #pragma once
 
-#include "LevelMap.h"			//our level
-#include "Mushroom.h"			//our mushroom
-#include "StartMenu.h"			//our menu
+#include "LevelMap.h"			//base level
+#include "Mushroom.h"			//mushroom
+#include "StartMenu.h"			//menu
 
 class Level1Map : public LevelMap {
 
-	Entity *mushroom;		//our level 1 enemy
+	Entity *mushroom;		//level 1 enemy
 	
 	sf::SoundBuffer *smashBuffer;	//smash sound
 	sf::Sound *smashSound;		//
