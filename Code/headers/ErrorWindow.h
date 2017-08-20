@@ -3,8 +3,8 @@
 #include <SFML/Graphics.hpp>
 
 class ErrorWindow {
-	sf::Texture *errorTexture;	//textures
-	sf::Sprite *error;		//
+	sf::Texture errorTexture;	//textures
+	sf::Sprite error;			//
 
 public:
 	ErrorWindow(int num);	//number of error
