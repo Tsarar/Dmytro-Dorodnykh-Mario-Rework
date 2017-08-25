@@ -97,7 +97,7 @@
 		};
 
 	Level1Map::~Level1Map(){
-			delete clockForDown;//freeing memory
+			delete clockForDown;	//freeing memory
 			delete Menu;		//
 			delete smashSound;	//
 			delete smashBuffer;	//
