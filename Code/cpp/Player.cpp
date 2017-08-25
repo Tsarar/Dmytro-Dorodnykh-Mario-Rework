@@ -150,9 +150,9 @@
 		void Player::collisionCheckSolidBonus (int iCoord,int jCoord, int mode) {
 				if (dy>0 && mode==1) { rect.top = float(iCoord*16 -  rect.height); dy=0; isOnGround=true; }	//if we hit the floor from above we are on ground
 				if (dy<0 && mode==1) { rect.top = float(iCoord*16 + 16); dy=0; bonusSound.play();		//if we hit bonus from bottom it spawns coin
-									   map.setTileMap(iCoord,jCoord,'e'); map.setTileMap(iCoord-1,jCoord,'C'); }	//
-				if (dx>0 && mode==0)   rect.left = float(jCoord*16 - rect.width);							//if we hit solid block from the side
-				if (dx<0 && mode==0)   rect.left = float(jCoord*16 + 16);								//we won't get through it
+					map.setTileMap(iCoord,jCoord,'e'); map.setTileMap(iCoord-1,jCoord,'C'); }	//
+				if (dx>0 && mode==0)   rect.left = float(jCoord*16 - rect.width);			//if we hit solid block from the side
+				if (dx<0 && mode==0)   rect.left = float(jCoord*16 + 16);				//we won't get through it
 			}
 
 		void Player::updateAxisY(float time){
